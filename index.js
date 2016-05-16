@@ -2,7 +2,8 @@ var aparse = require('acorn').parse;
 function parse (src) {
     return aparse(src, {
         ecmaVersion: 6,
-        allowHashBang: true
+        allowHashBang: true,
+        sourceType: 'module'
     });
 }
 
